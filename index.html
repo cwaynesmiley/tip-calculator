@@ -1,0 +1,39 @@
+<body>
+  <main>
+  <section>
+    <p>The purpose of this is to create a simple tip calculator so you know how much to pay when you're at a fine restaurant or someplace similar.</p>
+    
+    <label name="tipType">What sort of establishment are you at?
+      <select id="tipType">
+        <option value="restaurant">Restaurant</option>
+        <option value="hair_salon">Hair Salon</option>
+        <option value="nail_salon">Nail Salon</option>
+        <option value="massage_parlor">Massage Parlor</option>
+        <option value="taxi">Taxi</option>
+        <option value="pizza_delivery">Pizza Delivery</option>
+      </select>
+    </label><br />
+    <br />
+    <label name="cost">How much did the service cost?
+      <input type="number" id="cost" min="0" max="6000">
+    </label><br />
+    <br />
+    <label name="generous">How generous are you?
+      <select id="generous">
+      <option value="not_at_all">Not at all</option>
+      <option value="a_little_bit">A little bit</option>
+      <option value="as_much_as_the_next_guy">As much as the next guy</option>
+      <option value="pretty_darn">Pretty Darn</option>
+      <option value="jesus">Jesus</option>
+      </select>
+    </label><br />
+    <br />
+    <button id="submitButton" onclick="suggestedTip()">Calculate my tip</button>       
+    <button id="resetButton" onclick = "clearData()">Reset</button>
+    
+    <h2 id="suggestedTip">This is what we suggest you should tip: $<span></span></h2>
+ 
+    <h2 id="generousTip">This is what you should tip based off of how generous you are: $<span></span></h2>
+    </section>
+</main>
+</body>
